@@ -50,3 +50,32 @@ Two main parts:
 - (Optional) Additional modules or UI / network libraries  
 
 ## Repository Structure
+
+
+## Installation & Setup
+
+1. **Firmware Upload**  
+   - Open `DAA2.ino` in Arduino IDE  
+   - Configure the hardware pin assignments and threshold values  
+   - Upload to the microcontroller  
+
+2. **Wiring**  
+   - Connect soil moisture sensor to analog input pin  
+   - Connect pump / valve control through a transistor / relay / MOSFET  
+   - Include protective components like diode, resistors as needed  
+
+3. **Python Script Setup**  
+   - Ensure Python 3 is installed  
+   - Install dependencies (e.g. via `pip install …`)  
+   - Configure script parameters (port, threshold, logging)  
+
+4. **Powering On & Testing**  
+   - Power up the system  
+   - Monitor logs or console output  
+   - Place the sensor in soil and ensure watering triggers when moisture is low  
+
+## Usage
+
+- Run the Python script:  
+  ```bash
+  python3 DAAPBL.py
